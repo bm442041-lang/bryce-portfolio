@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="hobbies.html">Hobbies</a></li>
+            <li><a href="discover.html">Discover Duluth</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="career.html">Career</a></li>
+            <li><a href="game.html">Game</a></li>
+        </ul>
+    </nav>
+
+    <main class="game">
+        <section class="scoreboard">
+            <div class="card"><h3>Score</h3><div id="score">0</div></div>
+            <div class="card"><h3>Time</h3><div id="time">30</div></div>
+            <div class="card"><h3>Best</h3><div id="best">0</div></div>
+            <div class="card">
+                <h3>Lake Superior Sounds</h3>
+                <button class="btn" id="toggle-audio" type="button">Play Background Music</button>
+            </div>
+        </section>
+        <p>
+            <button class="btn" id="start">Start Game</button>
+        </p>
+        <div class="play-area" aria-label="Play Area"></div>
+        <p class="card">Catch fish swimming in Lake Superior! Click the different fish to score points. Misses subtract a point. You have 30 seconds—good luck!</p>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Bryce Miller. All rights reserved.</p>
+    </footer>
+
+    <audio id="bg-music" src="Files/backgroundmusic.m4a" preload="auto" loop></audio>
+    <script src="JS/script.js"></script>
+    <script src="JS/game.js"></script>
+</body>
+</html>
